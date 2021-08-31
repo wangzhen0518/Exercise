@@ -12,7 +12,6 @@ int setgolf(golf &g)
 {
     using std::cin;
     using std::cout;
-    using std::string;
     char name[Len];
     int hc;
     cout << "Enter name: ";
