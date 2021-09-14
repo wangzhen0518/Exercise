@@ -27,3 +27,4 @@
 21. 成员初始化列表 p464
 22. for_each, random_shuffle, sort p681
     for_each 指向的函数，不可更改容器内容
+23. ostream istream 迭代器模板 p691
