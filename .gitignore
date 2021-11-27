@@ -1,4 +1,7 @@
+*/bin/
 *.exe
 *.class
 *.o
 *.out
+.vscode/
+*.code-workspace
