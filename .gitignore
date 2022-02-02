@@ -1,8 +1,10 @@
 */bin/
 .vscode/
+
 *.exe
 *.class
 *.o
 *.out
+*.in
 file*
 *.code-workspace

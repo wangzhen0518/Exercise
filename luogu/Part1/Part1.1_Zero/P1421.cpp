@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1421
 #include <iostream>
 
 int main() {

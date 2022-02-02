@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1002
 #include <iostream>
 
 void print_table(long long **t, int n, int m) {
