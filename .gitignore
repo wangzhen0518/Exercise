@@ -6,5 +6,7 @@
 *.o
 *.out
 *.in
+tool*
 file*
+temp*
 *.code-workspace
