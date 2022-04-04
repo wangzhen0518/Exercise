@@ -4,11 +4,12 @@
 int count(int x) {
   int* f = new int[x + 1]{0};
   for (int i = 1; i <= x; ++i) {
-    for (int j = 1; j <= i / 2; ++j)
-      f[i] += f[j];
+    for (int j = 1; j <= i / 2; ++j) f[i] += f[j];
     ++f[i];
   }
-  return f[x];
+  int t = f[x];
+  delete[] f;
+  return t;
 }
 
 int main() {
