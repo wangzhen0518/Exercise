@@ -11,3 +11,4 @@ tool*
 file*
 temp*
 *.code-workspace
+input.*

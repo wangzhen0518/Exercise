@@ -7,6 +7,7 @@ void deal_input(std::string& temp) {
   std::string t;
   for (char c : temp) {
     if (c == '<') {
+      if (!t.empty())
         t.pop_back();
     } else
       t.push_back(c);
@@ -34,9 +35,9 @@ int main() {
     passage.emplace_back(temp);
     getline(cin, temp);
   }
-  getline(cin, temp);
   int n = passage.size();
 
+  getline(cin, temp);
   while (temp != signal) {
     deal_input(temp);
     input.emplace_back(temp);

@@ -23,11 +23,14 @@ int main() {
   getline(cin, word);
   getline(cin, article);
   int len1 = word.length(), len2 = article.length();
+  
+  // 将 word 转为小写
   int i = 0;
   while (i < len1) {
     word[i] = tolower(word[i]);
     ++i;
   }
+  // 将 article 全部用 '\0' 切分，并转为小写，p中记录了所有单词的起始位置
   i = 0;
   while (article[i] == ' ') {
     article[i] = '\0';
@@ -51,7 +54,6 @@ int main() {
   for (i = 0; i < p.size(); ++i) {
     if (pattern_match(article, word, p[i])) {
       ++count;
-      // printf("%d\n", p[i]);
       if (position == -1)
         position = p[i];
     }
