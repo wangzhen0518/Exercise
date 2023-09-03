@@ -1,6 +1,7 @@
 */bin/
 .vscode/
 .history/
+target/
 
 *.exe
 *.class
@@ -12,3 +13,5 @@ file*
 temp*
 *.code-workspace
 input.*
+
+Cargo.lock

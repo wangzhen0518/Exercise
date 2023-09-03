@@ -15,9 +15,8 @@ int count(int k, int sum, int start, int end, int* a) {
   if (k > end - start + 1)
     return 0;
   int n = 0;
-  for (int i = start; i <= end; ++i)
-    n += // count(k - 1, sum + a[i], start, i - 1, a) +
-        count(k - 1, sum + a[i], i + 1, end, a);
+  for (int i = start; i < end - k + 1; ++i)
+    n += count(k - 1, sum + a[i], i + 1, end, a);
   return n;
 }
 

@@ -6,7 +6,8 @@ void get_input(std::vector<char>& record) {
   char c;
   c = getchar();
   while (c != 'E') {
-    if (c == 'W' || c == 'L') record.emplace_back(c);
+    if (c == 'W' || c == 'L')
+      record.emplace_back(c);
     c = getchar();
   }
 }
