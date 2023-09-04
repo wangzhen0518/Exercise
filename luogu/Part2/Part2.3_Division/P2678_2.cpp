@@ -10,10 +10,7 @@ bool is_satisfied(std::vector<int> const& D, int step, int M) {
         else
             pos = i;
     }
-    if (pos != D.size() - 1)
-        return false;
-    else
-        return cnt <= M;
+    return cnt <= M;
 }
 
 bool is_satisfied2(std::vector<int> const& D, int step, int M) {
